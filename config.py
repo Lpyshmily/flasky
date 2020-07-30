@@ -8,11 +8,11 @@ class Config:
     MAIL_PORT = int(os.environ.get('MAIL_PORT', '587'))
     MAIL_USE_TLS = os.environ.get('MAIL_USE_TLS', 'true').lower() in \
         ['true', 'on', '1']
-    MAIL_USERNAME = os.environ.get('MAIL_USERNAME')  # 'guox0405@outlook.com'
-    MAIL_PASSWORD = os.environ.get('MAIL_PASSWORD')  # 'Lpyshmily520'
+    MAIL_USERNAME = os.environ.get('MAIL_USERNAME')
+    MAIL_PASSWORD = os.environ.get('MAIL_PASSWORD')
     FLASKY_MAIL_SUBJECT_PREFIX = '[Flasky]'
     FLASKY_MAIL_SENDER = 'Flasky Admin', os.environ.get('MAIL_USERNAME')
-    FLASKY_ADMIN = os.environ.get('FLASKY_ADMIN')  # 'lpyshmily@163.com'
+    FLASKY_ADMIN = os.environ.get('FLASKY_ADMIN')
     SQLALCHEMY_TRACK_MODIFICATIONS = False
 
     @staticmethod
